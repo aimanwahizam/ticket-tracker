@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Requirements
+
+1. Should be Built in React
+2. Each component should manage its own state
+3. The components should be generated using a map()
+
+As An Employee:
+- I want to keep a count of all the tickets I have completed
+- I want to be able to track the number of tickets my coworkers have completed
+
 ## Available Scripts
 
 In the project directory, you can run:
