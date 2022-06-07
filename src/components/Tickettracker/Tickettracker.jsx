@@ -2,22 +2,16 @@ import React from "react";
 import "./TicketTracker.scss";
 import CardTop from "../CardTop/CardTop";
 import Counter from "../Counter/Counter.jsx";
-import employees from "../../data/employees.js";
 
-const TicketTracker = () => {
+const TicketTracker = (props) => {
+  const { name, role, id } = props;
 
-  const TicketTrackerJSX = employees.map((employee) => {
-    const { name, role, id } = employee;
-
-    return (
-      <div className="card">
-        <CardTop name={name} role={role} id={id} />
-        <Counter />
-      </div>
-    );
-  });
-
-  return <div className="main__trackers">{TicketTrackerJSX}</div>;
+  return (
+    <div className="card">
+      <CardTop name={name} role={role} id={id} />
+      <Counter />
+    </div>
+  );
 };
 
 export default TicketTracker;
