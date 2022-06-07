@@ -5,5 +5,11 @@
   justify-content: center;
   border: 2px solid black;
   margin: 2rem;
-  height: 80vh;
+
+  &__trackers {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
 }
