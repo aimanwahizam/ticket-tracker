@@ -18,8 +18,8 @@ const Tickettracker = (props) => {
           <h3>Counter</h3>
           <h3>0</h3>
           <div className="card__buttons">
-            <button>-</button>
-            <button>+</button>
+            <button className="card__button">-</button>
+            <button className="card__button">+</button>
           </div>
         </div>
       </div>

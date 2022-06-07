@@ -8,7 +8,7 @@
 
     &__text {
         position: relative;
-        right: -5px;
+        right: -7.5px;
         font-size: 1rem;
     }
     
@@ -20,5 +20,19 @@
         align-items: center;
         padding: 0.5rem;
         height: 50%;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+    }
+
+    &__button {
+        border: none;
+        background-color: white;
+        font-size: 1.5rem;
+        position: relative;
+        top: -8px;
     }
 }
