@@ -1,3 +1,5 @@
+@use "../../../assets/scss/variables" as *;
+
 .counter {
     border: 2px solid black;
     margin: 1rem;
@@ -6,10 +8,16 @@
     align-items: center;
     padding: 0.5rem;
     height: 50%;
+    background-color: $color-counter;
+
+    &__value {
+        position: relative;
+        top: -1.05rem;
+    }
 
     &__buttons {
         display: flex;
         justify-content: space-between;
-        width: 65%;
+        width: 90%;
     }
 }

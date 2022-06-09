@@ -1,4 +1,7 @@
+@use "../../../assets/scss/variables" as *;
+
 .card {
     border: 2px solid black;
     width: 10rem;
+    background-color: $color-card;
 }

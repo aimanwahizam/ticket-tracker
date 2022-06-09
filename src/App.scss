@@ -1,3 +1,5 @@
+@use "../assets/scss/variables" as *;
+
 .main {
   display: flex;
   flex-direction: column;
@@ -5,12 +7,29 @@
   justify-content: center;
   border: 2px solid black;
   margin: 2rem;
+  font-family: $font-title;
+  background-color: $color-background;
 
   &__trackers {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     margin-bottom: 1rem;
-    //GRID WRAP
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 900px) {
+  .main {
+    &__trackers {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    &__trackers {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
